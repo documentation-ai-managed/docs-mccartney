@@ -1,0 +1,145 @@
+---
+title: Getting Started with McCartney
+description: Set up your McCartney account and create your first documentation space in just a few minutes.
+---
+
+## Prerequisites
+
+Before you begin, ensure you have the following:
+
+<Callout kind="info">
+
+- A modern web browser like Chrome, Firefox, or Safari
+- A valid email address for account verification
+- No prior installation required - everything runs in your browser
+
+</Callout>
+
+## Sign Up for Your McCartney Account
+
+Creating an account takes less than a minute. Follow these steps to get started.
+
+<Steps>
+  <Step title="Visit the Sign-Up Page" icon="external-link">
+    Navigate to `https://mccartney.com/signup` in your browser.
+  </Step>
+  <Step title="Enter Your Details" icon="user">
+    Provide your email, create a strong password, and complete the CAPTCHA if prompted.
+  </Step>
+  <Step title="Verify Email" icon="mail">
+    Check your inbox for a verification email from McCartney and click the link to activate your account.
+  </Step>
+  <Step title="Log In" icon="log-in">
+    Return to `https://mccartney.com/login` and sign in with your credentials.
+  </Step>
+</Steps>
+
+## Dashboard Overview
+
+Once logged in, you land on the McCartney dashboard. Here's a quick tour of key sections.
+
+<Columns cols={3}>
+  <Card title="Documentation Spaces" icon="book-open" href="#create-space">
+    Manage all your project docs in organized spaces.
+  </Card>
+  <Card title="Recent Documents" icon="file-text" href="/introduction">
+    Access your latest edits and drafts instantly.
+  </Card>
+  <Card title="Templates" icon="layout" href="/configuration">
+    Start with pre-built templates for APIs, guides, or changelogs.
+  </Card>
+</Columns>
+
+## Create Your First Documentation Space
+
+A documentation space organizes all docs for a single project.
+
+<Steps>
+  <Step title="Click New Space" icon="plus">
+    From the dashboard, select the `New Space` button in the top right.
+  </Step>
+  <Step title="Name Your Space" icon="edit-3">
+    Enter a name like `My Project Docs` and add an optional description.
+  </Step>
+  <Step title="Choose Visibility" icon="globe">
+    Select `Public` for sharing or `Private` for team access.
+  </Step>
+  <Step title="Create Space" icon="check-circle">
+    Click `Create` to generate your space. It appears in your dashboard list.
+  </Step>
+</Steps>
+
+<Callout kind="tip">
+
+Spaces support custom domains, branding with your color `#3B82F6`, and collaborative editing.
+
+</Callout>
+
+## Add Your First Project Document
+
+Inside your new space, create a document using Markdown or the visual editor.
+
+<Tabs>
+  <Tab title="Markdown Editor" icon="code">
+    Use the Markdown editor for full control.
+
+    <CodeGroup tabs="MDX,Markdown">
+    ````mdx
+    ---
+    title: My First Doc
+    description: Welcome to my project.
+    ---
+
+    ## Overview
+
+    This is your first document in McCartney.
+    ````
+
+    ````markdown
+    # My First Doc
+
+    ## Overview
+
+    This is your first document in McCartney.
+    ````
+    </CodeGroup>
+  </Tab>
+  <Tab title="Visual Editor" icon="type">
+    Drag-and-drop components like cards and steps without writing code. Preview changes live as you build.
+  </Tab>
+</Tabs>
+
+## Basic Interface Tour
+
+Explore the editor interface with these expandable sections.
+
+<ExpandableGroup>
+  <Expandable title="Sidebar Navigation" default-open="true">
+    The left sidebar lists your documents, spaces, and settings. Use search to find content quickly.
+  </Expandable>
+  <Expandable title="Editor Toolbar">
+    Top toolbar offers undo/redo, preview mode, and publish options. Toggle between source and visual views.
+  </Expandable>
+  <Expandable title="Preview Panel">
+    Real-time preview shows how your docs render. Test on mobile sizes with the device toggle.
+  </Expandable>
+</ExpandableGroup>
+
+## Next Steps
+
+Congratulations! You've set up McCartney and created your first space.
+
+<Columns cols={2}>
+  <Card title="Learn Authentication" icon="shield" href="/authentication">
+    Secure your spaces with API keys and user roles.
+  </Card>
+  <Card title="Advanced Configuration" icon="settings" href="/configuration">
+    Customize themes, integrations, and workflows.
+  </Card>
+</Columns>
+
+<Callout kind="success">
+
+Publish your space to share a live URL like `https://myproject.mccartney.com`. Dive into [the full docs](/introduction) for more.
+
+</Callout>

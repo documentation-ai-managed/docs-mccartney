@@ -1,0 +1,141 @@
+---
+title: Changelog
+description: Track the latest updates, improvements, and new features released in McCartney.
+---
+
+## Recent Updates
+
+<Update label="2024-10-15" description="v1.2.0" tags={["feature", "bugfix"]}>
+
+## New Features
+
+- Introduce real-time collaboration for teams, allowing multiple users to edit documentation simultaneously.
+- Add custom brand color support; set your theme with `brandColor: "#3B82F6"` in config.
+
+## Improvements
+
+- Enhance MDX parsing speed by `>30%` for large documentation sites.
+- Improve search indexing with better relevance scoring.
+
+## Bug Fixes
+
+- Fix parsing errors with nested code blocks in JSX components.
+- Resolve issues with Mermaid diagram rendering on mobile devices.
+
+</Update>
+
+<Update label="2024-09-20" description="v1.1.0" tags={["feature", "improvement"]}>
+
+## New Features
+
+- Launch API endpoints for programmatic documentation management at `https://api.example.com/docs`.
+- Support for video embeds with `<Video>` component, including YouTube and self-hosted options.
+
+## Improvements
+
+- Optimize image loading with lazy loading and `priority={true}` for hero images.
+- Add keyboard navigation support in Tabs and Steps components.
+
+## Bug Fixes
+
+- Correct escaping of special characters like `{` and `<` in prose text.
+- Patch security vulnerability in webhook handling.
+
+</Update>
+
+<Update label="2024-08-10" description="v1.0.0" tags={["feature", "breaking"]}>
+
+## Initial Release
+
+- Core MDX documentation engine with 15+ components like `<Callout>`, `<Steps>`, and `<CodeGroup>`.
+- Full support for YAML frontmatter, custom themes, and Lucide icons.
+
+## Breaking Changes
+
+- Remove legacy `<Mermaid>` component; use code blocks only: ````mermaid graph TD; A-->B ````.
+
+</Update>
+
+<Callout kind="tip">
+  Check the `tags` on each release: `feature` for new capabilities, `bugfix` for stability, `breaking` for required migrations, and `improvement` for enhancements.
+</Callout>
+
+## Migration Guide
+
+Upgrade to the latest version with these steps. Review breaking changes from v1.0.0 if coming from earlier releases.
+
+<Steps>
+  <Step title="Update Package" icon="download">
+
+    Use your package manager to install the latest version.
+
+````bash
+npm install mccartney@latest
+````
+
+  </Step>
+  <Step title="Review Config" icon="settings">
+
+    Update your configuration file to include new options like brand colors.
+
+````javascript
+// mccartney.config.js
+module.exports = {
+  brandColor: '#3B82F6',
+  apiEndpoint: 'https://api.example.com',
+};
+````
+
+  </Step>
+  <Step title="Test Components" icon="play">
+
+    Verify nested code blocks and special character escaping in your pages.
+
+  </Step>
+</Steps>
+
+For v1.0.0 breaking changes, here's a before/after example for diagrams:
+
+<CodeGroup tabs="Before (Broken),After (Fixed)">
+  ```jsx
+  // ❌ Deprecated - causes parsing errors
+  <Mermaid>
+  graph TD; A-->B;
+  </Mermaid>
+  ```
+  ````markdown
+  ```mermaid
+  // ✅ Correct - use code block
+  graph TD;
+      A[Start] --> B[End];
+  ```
+  ````
+</CodeGroup>
+
+## Upcoming Features
+
+Preview what's coming next. These will roll out in v1.3.0 and beyond.
+
+<Columns cols={3}>
+  <Card title="AI Content Assistant" icon="bot" href="/introduction">
+    Generate MDX pages automatically from prompts.
+  </Card>
+  <Card title="Advanced Analytics" icon="bar-chart-3" href="/quickstart">
+    Track documentation usage and popular sections.
+  </Card>
+  <Card title="Multi-Language Support" icon="globe" href="/authentication">
+    Automatic translation for global teams.
+  </Card>
+</Columns>
+
+<Expandable title="Detailed Migration Notes" default-open="false">
+
+If you encounter issues after updating:
+
+| Issue | Solution |
+|-------|----------|
+| Parsing errors with `{variable}` | Wrap in backticks: `{`variable`}` |
+| Slow builds | Enable caching: `cache: {true}` in config |
+| Icon missing | Use exact Lucide names like `zap` |
+
+</Expandable>

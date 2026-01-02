@@ -1,0 +1,103 @@
+---
+title: Introduction to McCartney
+description: Discover McCartney, your default documentation space for organizing and managing project documentation with ease and efficiency.
+---
+
+## Overview
+
+McCartney provides a centralized space to organize, manage, and collaborate on your project documentation. You create structured docs with MDX support, version history, and search. Start by inviting team members and uploading your first Markdown file.
+
+<Callout kind="info">
+  McCartney uses brand color `#3B82F6` for primary elements. Apply it in custom themes via CSS variables.
+</Callout>
+
+## Key Features
+
+Explore core capabilities that streamline your documentation workflow.
+
+<Columns cols={3}>
+  <Card title="MDX Support" icon="code">
+    Write rich docs with components like `<Callout>` and `<Steps>`. Embed interactive elements directly.
+  </Card>
+  <Card title="Version Control" icon="git-branch">
+    Track changes with Git integration. Roll back to any version effortlessly.
+  </Card>
+  <Card title="Search & Navigation" icon="search">
+    Full-text search across all docs. Sidebar navigation updates automatically.
+  </Card>
+</Columns>
+
+## Benefits for Project Teams
+
+You collaborate without version conflicts. Developers document APIs using `<ParamField>` components, while designers add screenshots. Teams stay aligned with real-time previews and comments.
+
+- **Centralized Access**: One link shares everything.
+- **Customizable**: Tailor layouts with YAML frontmatter.
+- **Scalable**: Handles large projects with thousands of pages.
+
+## Quick Start
+
+Get up and running in minutes.
+
+<Steps>
+  <Step title="Create Account" icon="user-plus">
+    Visit `https://mccartney.app` and sign up with your email.
+  </Step>
+  <Step title="New Space" icon="plus">
+    Click **New Space** and name it for your project.
+  </Step>
+  <Step title="Upload Docs">
+````markdown
+# My First Page
+
+Welcome to McCartney!
+````
+
+    Drag and drop Markdown or MDX files.
+  </Step>
+  <Step title="Invite Team" icon="users">
+    Share the space link and add collaborators.
+  </Step>
+</Steps>
+
+## Quick Navigation
+
+Jump to essential sections.
+
+<Columns cols={2}>
+  <Card title="Quickstart Guide" icon="rocket" href="/quickstart">
+    Set up your first project space.
+  </Card>
+  <Card title="Authentication" icon="lock" href="/authentication">
+    Secure your docs with API keys.
+  </Card>
+  <Card title="Configuration" icon="settings" href="/configuration">
+    Customize your documentation.
+  </Card>
+  <Card title="Changelog" icon="git-commit" href="/changelog">
+    Latest updates and features.
+  </Card>
+</Columns>
+
+## Brand Guidelines
+
+Follow these to maintain consistency.
+
+<Tabs>
+  <Tab title="Colors" icon="palette">
+    Primary: `#3B82F6`  
+    Use for buttons and links.  
+    Secondary: `#1E40AF`
+  </Tab>
+  <Tab title="Typography" icon="font">
+    Headings: Inter font, bold.  
+    Body: 16px base size.
+  </Tab>
+  <Tab title="Components" icon="components">
+    Stick to available components like `<Card>` and `<Steps>`. Avoid custom JSX.
+  </Tab>
+</Tabs>
+
+<Callout kind="tip">
+  Ready to dive deeper? Check the [Quickstart](/quickstart) for advanced setup.
+</Callout>
